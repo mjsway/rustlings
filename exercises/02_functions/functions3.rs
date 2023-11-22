@@ -3,10 +3,13 @@
 // Execute `rustlings hint functions3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 fn main() {
-    call_me();
+    // declare val as an i32
+    let val: i32 = 12;
+    // shadow val as u32 so call_me will accept it
+    let val: u32 = 12;
+    call_me(val);
 }
 
 fn call_me(num: u32) {
